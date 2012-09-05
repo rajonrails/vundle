@@ -43,7 +43,7 @@ endf
 
 func! s:parse_name(arg)
   let arg = a:arg
-  let git_proto = exists('g:vundle_default_git_proto') ? g:vundle_default_git_proto : 'https'
+  let git_proto = exists('g:vundle_default_git_proto') ? g:vundle_default_git_proto : 'http'
 
   if    arg =~? '^\s*\(gh\|github\):\S\+'
   \  || arg =~? '^[a-z0-9][a-z0-9-]*/[^/]\+$'
